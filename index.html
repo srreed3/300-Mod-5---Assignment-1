@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <form id="userForm">
+        <label for="ReqDate">Request Date: </label>
+        <input type="date" id="ReqDate" name="ReqDate" required><br>
+
+        <label for="EmpID">Employee ID: </label>
+        <input type="number" id="EmpID" name="EmpID" required><br>
+
+        <label for="FName">First Name: </label>
+        <input type="text" id="FName" name="FName" required><br>
+
+        <label for="LName">Last Name: </label>
+        <input type="text" id="LName" name="LName" required><br>
+
+        <label for="ProbDesc">Problem Description: </label><br>
+        <textarea id="ProbDesc" name="ProbDesc" placeholder="Please describe the issue in full detail." rows="7" cols="50"></textarea><br>
+
+    <!-- added labels and inputs for assignment -->        
+        <label for="Status">Status: </label>
+        <span id="Status"></span><br>
+    
+        <label for="Response">Response Provided: </label>
+        <span id="Response"></span><br>
+
+        <button id="subBtn">Submit</button>
+
+        <div id="error" style="display:none"></div>
+
+    </form>
+
+    <script src='main.js'></script>
+</body>
+</html>
+
+
+<!--code for additional use of AJAX-->
+
+<!-- 
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Movie Search</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <h1>Movie Search</h1>
+    <input type="text" id="keyword" placeholder="Enter movie keyword">
+    <button onclick="searchMovies($('#keyword').val())">Search</button>
+    <ul id="movieList"></ul>
+    <div id="error" style="display:none"></div>
+</body>
+</html> 
+-->
